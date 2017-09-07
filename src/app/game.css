@@ -1,0 +1,219 @@
+#circle {
+	position:relative;
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border:10px solid rgba(255,255,255,.10);
+	width:350px;
+	height:350px;
+	overflow:hidden;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s  ease;
+	-o-transition: all .3s  ease;
+	-ms-transition: all .3s  ease;
+	transition: all .3s ease;
+}
+.fdw_left,
+.fdw_right {
+	float:left;
+	width:50%;
+	height:50%;
+	margin:0;
+	text-align:center;
+	text-decoration:none;
+}
+.fdw_left1,
+.fdw_right1 {
+	float:left;
+	width:50%;
+	height:50%;
+	margin:0;
+	text-align:center;
+	text-decoration:none;
+}
+.fdw_right {
+	border-radius:0 0 0 0;
+	-moz-border-radius:0 142px 142px 0;
+	-webkit-border-radius:0 0 0 0;
+}
+.fdw_right1{
+	border-radius:0 0 0 0;
+	-moz-border-radius:0 142px 142px 0;
+	-webkit-border-radius:0 0 0 0;
+}
+.fdw_left {
+	background-color:#9ACD32;
+	border-radius:0 0 0 0;
+	-moz-border-radius:142px 0 0 142px;
+	-webkit-border-radius:0 0 0 0;
+}
+/*.fdw_left:hover {
+  background-color:#F9FE10;
+}*/
+.fdw_left1 {
+	background-color:#191970;
+	border-radius:0 0 0 0;
+	-moz-border-radius:142px 0 0 142px;
+	-webkit-border-radius:0 0 0 0;
+}
+/*.fdw_left1:hover {
+  background-color:#31AEF2;
+}*/
+.fdw_right {
+	background-color:#006400;
+}/*Dark Green*/
+/*.fdw_right:hover {
+	background-color:#3CFE08;
+}/*Light Green*/
+.fdw_right1 {
+	background-color:#8B0000;
+	}
+/*.fdw_right1:hover {
+	background-color:#FE0B0E;
+}*/
+#circle {
+	border:12px solid;
+	}
+#circle .icon {
+	width:71px;
+	height:77px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-39px auto 0 -35px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s  ease-in-out;
+	-o-transition: all .3s  ease-in-out;
+	-ms-transition: all .3s  ease-in-out;
+	transition: all .3s ease-in-out;
+}
+#circle a {
+	-webkit-transition: background-color .3s;
+	-moz-transition: background-color .3s;
+	-o-transition: background-color .3s;
+	-ms-transition: background-color .3s;
+	transition: background-color .3s;
+}
+body{
+  background-color:#8A578B;
+}
+#circle:hover .icon {
+	transform: rotate(180deg);
+	-ms-transform: rotate(180deg); /* IE 9 */
+	-webkit-transform: rotate(180deg); /* Safari and Chrome */
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s  ease-in-out;
+	-o-transition: all .3s  ease-in-out;
+	-ms-transition: all .3s  ease-in-out;
+	transition: all .3s ease-in-out;
+	}
+.circle_heading-top1{
+	position: relative;
+  top: 90px;
+	font-size:16px;
+	color:#fff;
+}
+.circle_heading-top2{
+	position: relative;
+    top: 110px;
+	font-size:16px;
+	    right: 8px;
+}
+.circle_heading-bot1{
+	position: relative;
+    top: 44px;
+	font-size:16px;
+	color:#fff;
+
+}
+.circle_heading-bot2{
+	position: relative;
+    top: 56px;
+	right:14px;
+	font-size:16px;
+}
+#innerCircle {
+  text-align:center;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-shadow: 3px 2px red;
+  font-color:white;
+  position: absolute;
+   background: #05344E;
+   border-radius: 50%;
+   height: 180px;
+   width: 180px;
+   top: 50%;
+   left: 50%;
+   margin: -90px 0px 0px -90px;
+  }
+#innerCircle {
+	border:12px solid;
+	}
+#innerCircle:hover {
+	border:10px solid rgb(141, 7, 143);
+	}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.btn-circle {
+  background-color:black;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 9px;
+  line-height: 1.428571429;
+  border-radius: 50%;
+}

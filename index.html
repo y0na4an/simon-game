@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simon Game</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="stylesheet" type="text/css" href="./src/app/game.css" media="screen" />
+
+</head>
+
+<body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="./src/app/game.js"></script>
+
+  <body style="align:center;">
+    <br>
+    <div class="row row1 margintop-50  marginbot-50">
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4">
+        <div style="margin: 3px 0 0 -30px;">
+          <div id="circle">
+            <p class="icon"></p>
+            <a id="yellow" href="#" onclick="checkButton('yellow')" class="chover fdw_left item" framenum="1"><span  class="circle_heading-top1"></span></a>
+            <a href="#" id="green" onclick="checkButton('green')" class="chover fdw_right" framenum="2"><span class="circle_heading-top2"></span></a>
+            <div id="innerCircle">
+              <p></p>
+              <p style="color:silver; font-size: 22px;">SIMON</p>
+              <div>
+                <div class="col-sm-5">
+                  <p id="currentLevel" style="font-size: 24px; color:white;"><u>0</u></p>
+                  <p id="buttonSteps" style="font-size: 11px; color:white;"></p>
+                </div>
+
+                <div class="row" style="font-size: 12px;">
+                  <div class="col-sm-6"><button id="startingButton" onclick="colorSequencer()" type="button" class="btn btn-info btn-circle">Start<i class="glyphicon"></i></button></div>
+                  <div>
+                    <button id="strictButton" onclick="strictSwitch()" value="off" type="button" class="btn btn-info btn-circle">Strict<i class="glyphicon "></i></button>
+                  </div>
+                </div>
+
+                <label class="switch">
+<input id="gameStatusLabel" type="checkbox" onclick="gameOnOff();">
+<span class="slider round"></span>
+</label>
+              </div>
+            </div>
+
+            <a id="blue" onclick="checkButton('blue')" href="#" class="chover fdw_left1" framenum="3"><span class="circle_heading-bot1"></span></a>
+            <a id="red" onclick="checkButton('red')" href="#" class="chover fdw_right1" framenum="4"><span class="circle_heading-bot2"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="col-md-12"></div>
+        <div class="col-md-12" style="margin-top: 0px;">
+        </div>
+      </div>
+    </div><br>
+  </body>
+
+</body>
+
+</html>
